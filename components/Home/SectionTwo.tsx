@@ -15,7 +15,7 @@ import Container from "../Container";
 const SectionTwo = () => {
   return (
     <Container>
-      <section className="relative mt-20 min-h-screen w-full flex flex-col gap-10">
+      <section className="relative my-20 w-full flex flex-col gap-10">
         <div className="flex justify-center gap-7 items-center">
           <div className="relative w-[300px] h-[200px] flex items-center justify-center flex-col gap-3 rounded-lg">
             <Image

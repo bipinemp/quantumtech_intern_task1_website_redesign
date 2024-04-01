@@ -33,7 +33,7 @@ const WorksList = [
 const Works = () => {
   return (
     <Container>
-      <section className="flex flex-col items-center gap-10 relative min-h-screen w-full">
+      <section className="flex flex-col items-center gap-10 relative my-20 w-full">
         <h1 className="z-10 relative w-fit inline-block text-[4rem] text-center font-black">
           Our Works
           <span className="absolute bottom-4 -z-10 left-0 w-full h-[15px] bg-primary"></span>

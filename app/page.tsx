@@ -19,14 +19,17 @@ export default function Home() {
       <div className="relative w-full h-[20px] mb-20">
         <Image src={wave} fill alt="" className="bg-primary" />
       </div>
+
       <SectionTwo />
       <div className="relative w-full h-[20px] mb-20">
         <Image src={wave} fill alt="" className="bg-primary" />
       </div>
+
       <Works />
       <div className="relative w-full h-[20px] mb-20">
         <Image src={wave} fill alt="" className="bg-primary" />
       </div>
+
       <Steps />
       <Trusted />
       <Inquiry />

@@ -11,7 +11,7 @@ const StepsList = [
 const Steps = () => {
   return (
     <Container>
-      <section className="mb-20 flex flex-col gap-10">
+      <section className="my-20 flex flex-col gap-10">
         <div className="flex flex-col gap-1">
           <h2 className="font-black text-primary text-[1.2rem]">STEPS</h2>
           <h1 className="relative inline-block w-fit font-black opacity-80 text-[2.2rem]">

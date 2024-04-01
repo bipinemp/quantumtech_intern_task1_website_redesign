@@ -8,7 +8,7 @@ import Container from "../Container";
 const SectionOne = () => {
   return (
     <Container>
-      <section className="relative min-h-screen w-full grid grid-cols-3 gap-x-5">
+      <section className="relative my-20 w-full grid grid-cols-3 gap-x-5">
         <div className="flex flex-col gap-7 justify-center col-span-2">
           <div className="flex flex-col">
             <p className="font-black opacity-80 text-primary">
@@ -68,10 +68,8 @@ const SectionOne = () => {
           </Button>
         </div>
 
-        <div className="absolute right-0 bottom-[13rem] col-span-1">
+        <div className="absolute right-0 bottom-[8rem] col-span-1">
           <DotSvg />
-          {/* <NeonSvg /> */}
-          {/* <Image src={img} fill alt="" className="object-contain" /> */}
         </div>
       </section>
     </Container>

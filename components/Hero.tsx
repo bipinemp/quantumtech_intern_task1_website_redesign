@@ -5,7 +5,7 @@ import Container from "./Container";
 const Hero = () => {
   return (
     <Container>
-      <section className="relative min-h-[85vh] w-full flex flex-col items-center justify-center gap-10">
+      <section className="relative my-20 w-full flex flex-col items-center justify-center gap-10">
         <div className="absolute size-80 rounded-full bg-primary/40 blur-3xl z-0 top-20 left-32"></div>
         <div className="flex flex-col gap-5 items-center">
           {/* <h1 className="text-[3.5rem] font-black">
