@@ -23,6 +23,7 @@ const SectionOne = () => {
             your business creates, before building a custom website, to ensure
             everything to help you and your brand achieve growth.
           </p>
+
           <div className="flex flex-col gap-5">
             <div className="relative flex items-center rounded-lg shadow bg-secondary">
               <div className="py-4 px-6">
@@ -60,11 +61,13 @@ const SectionOne = () => {
               </div>
             </div>
           </div>
+
           <Button
-            className="shadow-lg w-fit text-background transition-all duration-200 ease-out flex items-center gap-2 font-bold tracking-wide py-7 px-8 rounded-full"
+            className="z-20 text-[1.1rem] w-fit shadow-lg text-background transition-all duration-200 ease-out flex items-center gap-2 font-bold tracking-wide py-6 px-7 rounded-full"
             size={"lg"}
+            type="button"
           >
-            LEARN MORE <ChevronsRight className="size-10" />
+            QUICK ENQUIRY <ChevronsRight className="size-10" />
           </Button>
         </div>
 
