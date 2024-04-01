@@ -4,6 +4,7 @@ import work1 from "@/public/images/work1.png";
 import Image from "next/image";
 import { SquareArrowOutUpRight } from "lucide-react";
 import Container from "../Container";
+import Dividersvg from "../Dividersvg";
 
 const WorksList = [
   {
