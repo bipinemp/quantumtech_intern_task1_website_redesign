@@ -6,14 +6,8 @@ const Hero = () => {
   return (
     <Container>
       <section className="relative my-20 w-full flex flex-col items-center justify-center gap-10">
-        <div className="absolute size-80 rounded-full bg-primary/40 blur-3xl z-0 top-20 left-32"></div>
+        <div className="absolute size-80 rounded-full bg-primary/40 blur-3xl z-0 -top-1 left-20"></div>
         <div className="flex flex-col gap-5 items-center">
-          {/* <h1 className="text-[3.5rem] font-black">
-          Striving for&nbsp;
-          <span className="py-5 px-8 bg-primary/80 rounded-3xl">
-          <span className="opacity-80">Progress,</span>
-          </span>
-        </h1> */}
           <h1 className="text-[4rem] font-black">
             Striving For&nbsp;
             <span className="z-10 relative inline-block">
