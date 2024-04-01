@@ -14,9 +14,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--paragraph" });
 export const metadata: Metadata = {
   title: "Quantum Compilers Technologies",
   description: "Created By Bipin Bhandari",
-  // icons: {
-  //   icon: ["/writz.ico?v=4"],
-  // },
+  icons: {
+    icon: ["/favicon.ico?v=4"],
+  },
 };
 
 export default function RootLayout({
