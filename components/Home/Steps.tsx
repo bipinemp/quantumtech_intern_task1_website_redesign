@@ -18,7 +18,10 @@ const Steps = () => {
           {StepsList.map((step, i) => (
             <>
               {i > 0 && StepsList.length !== i && (
-                <div className="llg:w-[50px] h-[50px] border-l-[3px] border-l-primary llg:border-b-[3px] border-b-primary border-dashed"></div>
+                <div
+                  key={i}
+                  className="llg:w-[50px] h-[50px] llg:h-0 border-l-[3px] border-l-primary llg:border-b-[3px] border-b-primary border-dashed"
+                ></div>
               )}
 
               <div
