@@ -30,6 +30,7 @@ const MissionGoal = () => {
                   src="https://quantumctech.com/images/flag.svg"
                   fill
                   alt=""
+                  className="p-3"
                 />
               </div>
               <span className="ml-4 md:ml-0 w-[3px] h-full bg-[#1FB2D1]"></span>
@@ -46,6 +47,7 @@ const MissionGoal = () => {
                   src="https://quantumctech.com/images/goal.svg"
                   fill
                   alt=""
+                  className="p-3"
                 />
               </div>
               <span className="ml-4 sm:ml-0 w-[3px] h-full bg-[#1FB2D1]"></span>

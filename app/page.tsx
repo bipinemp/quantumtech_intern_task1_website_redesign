@@ -3,7 +3,6 @@ import Inquiry from "@/components/Home/Inquiry";
 import Steps from "@/components/Home/Steps";
 import Trusted from "@/components/Home/Trusted";
 import Works from "@/components/Home/Works";
-import Footer from "@/components/footer/Footer";
 import Image from "next/image";
 import wave from "@/public/images/waves.svg";
 import MissionGoal from "@/components/Home/MissionGoal";
@@ -32,7 +31,6 @@ export default function Home() {
       <Steps />
       <Trusted />
       <Inquiry />
-      <Footer />
     </main>
   );
 }
