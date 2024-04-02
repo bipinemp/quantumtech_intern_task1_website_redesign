@@ -10,7 +10,7 @@ const ArrowsSvg = () => {
     >
       <g
         fill="none"
-        stroke-width="2"
+        strokeWidth="2"
         stroke="hsl(36, 99%, 55%)"
         stroke-linecap="square"
         stroke-dasharray="0 4.5"

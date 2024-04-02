@@ -8,7 +8,7 @@ const DotSvg = () => {
       width="100%"
       height="100%"
     >
-      <g stroke-width="8.25" stroke="hsla(36 99% 55%)" fill="none">
+      <g strokeWidth="8.25" stroke="hsla(36 99% 55%)" fill="none">
         <circle
           r="10.289473684210526"
           cx="0"

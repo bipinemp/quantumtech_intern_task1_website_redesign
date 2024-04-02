@@ -29,7 +29,7 @@ export default function Home() {
         <Image src={wave} fill alt="" className="bg-primary" />
       </div>
 
-      {/* <Steps /> */}
+      <Steps />
       <Trusted />
       <Inquiry />
       <Footer />
