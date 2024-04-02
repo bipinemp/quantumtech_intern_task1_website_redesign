@@ -10,6 +10,16 @@ const config = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      vsm: "500px",
+      ssm: "600px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      llg: "1060px",
+      xl: "1280px",
+      "2xl": "1400px",
+    },
     container: {
       center: true,
       padding: "2rem",

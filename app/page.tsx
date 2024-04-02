@@ -1,26 +1,25 @@
-import Dividersvg from "@/components/Dividersvg";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Home/Hero";
 import Inquiry from "@/components/Home/Inquiry";
-import SectionOne from "@/components/Home/SectionOne";
-import SectionTwo from "@/components/Home/SectionTwo";
 import Steps from "@/components/Home/Steps";
 import Trusted from "@/components/Home/Trusted";
 import Works from "@/components/Home/Works";
 import Footer from "@/components/footer/Footer";
 import Image from "next/image";
 import wave from "@/public/images/waves.svg";
+import MissionGoal from "@/components/Home/MissionGoal";
+import Services from "@/components/Home/Services";
 
 export default function Home() {
   return (
     <main className="relative flex flex-col">
       <Hero />
 
-      <SectionOne />
+      <MissionGoal />
       <div className="relative w-full h-[20px] mb-20">
         <Image src={wave} fill alt="" className="bg-primary" />
       </div>
 
-      <SectionTwo />
+      <Services />
       <div className="relative w-full h-[20px] mb-20">
         <Image src={wave} fill alt="" className="bg-primary" />
       </div>
@@ -30,7 +29,7 @@ export default function Home() {
         <Image src={wave} fill alt="" className="bg-primary" />
       </div>
 
-      <Steps />
+      {/* <Steps /> */}
       <Trusted />
       <Inquiry />
       <Footer />

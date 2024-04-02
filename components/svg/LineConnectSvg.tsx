@@ -2,7 +2,7 @@ import React from "react";
 
 const LineConnectSvg = () => {
   return (
-    <div className="absolute w-full -bottom-60">
+    <div className="hidden xl:absolute xl:block w-full -bottom-60">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
