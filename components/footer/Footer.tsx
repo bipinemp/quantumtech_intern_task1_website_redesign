@@ -22,7 +22,7 @@ const ServicesList = [
 const Footer = () => {
   return (
     <footer className="bg-foreground py-16 text-background flex flex-col gap-20 justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 px-5 vsm:gap-x-20 gap-y-10 vsm:px-20">
+      <div className="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 px-5 vsm:gap-x-20 gap-y-10 vsm:px-20">
         <div className="flex flex-col gap-5 col-span-1 xl:col-span-2">
           <Image
             src={logo}
