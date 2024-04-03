@@ -17,7 +17,7 @@ const page = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col gap-10 mb-20 max-w-[1920px] mx-auto px-4 md:px-10 xl:px-28 2xl:px-52">
+      <div className="flex flex-col gap-32 mb-20 max-w-[1920px] mx-auto px-4 md:px-10 xl:px-28 2xl:px-52">
         {ServicesList.map((service, i) => (
           <div key={i} className="grid grid-cols-2 items-center gap-5">
             {i % 2 === 0 ? (

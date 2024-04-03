@@ -79,6 +79,21 @@ export const StepsList = [
   { name: "Testing and Deployment", icon: Rocket },
 ];
 
+export const NextStepList = [
+  {
+    name: "We'll prepare a proposal",
+    desc: "Required scope, timeline and approximate price will be included if you provide us with a detail information about your project.",
+  },
+  {
+    name: "Together we discuss it",
+    desc: "Lets get acquainted and discuss all the possible alternatives , variants and options. through the help of social platforms.",
+  },
+  {
+    name: "Let’s start building",
+    desc: "When the contract is signed and all the goals are set, we can start the first sprint and wait for further output.",
+  },
+];
+
 export const TeamList = [
   { name: "Abinash Rana", role: "Project Director", img: person1 },
   {
