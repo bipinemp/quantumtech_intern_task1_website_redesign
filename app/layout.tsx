@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/header/Navbar";
 import Container from "@/components/Container";
 import Footer from "@/components/footer/Footer";
+import Template from "./template";
 
 const poppins = Poppins({
   subsets: ["latin"],

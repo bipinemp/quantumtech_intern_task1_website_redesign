@@ -1,9 +1,24 @@
+import { MotionDiv } from "../MotionDiv";
 import { Button } from "../ui/button";
 import { ChevronsRight } from "lucide-react";
 
 const Inquiry = () => {
   return (
-    <section className="h-[200px] w-full flex flex-col gap-1 sm:gap-3 justify-center items-center mb-20">
+    <MotionDiv
+      initial={{ y: 20, opacity: 0 }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+      }}
+      viewport={{ once: true }}
+      transition={{
+        type: "spring",
+        stiffness: 90,
+        duration: 1.7,
+        bounce: 0.3,
+      }}
+      className="h-[200px] w-full flex flex-col gap-1 sm:gap-3 justify-center items-center mb-20"
+    >
       <h1 className="font-black opacity-80 text-center text-[1.5rem] sm:text-[2.5rem]">
         Looking for business opportunity?
       </h1>
@@ -17,7 +32,7 @@ const Inquiry = () => {
       >
         QUICK ENQUIRY <ChevronsRight className="size-8 sm:size-10" />
       </Button>
-    </section>
+    </MotionDiv>
   );
 };
 

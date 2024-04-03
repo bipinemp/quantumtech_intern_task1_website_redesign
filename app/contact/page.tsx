@@ -1,5 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import Container from "@/components/Container";
+import { MotionDiv } from "@/components/MotionDiv";
 import { NextStepList } from "@/lib/lists";
 import realdaam from "@/public/images/realdaam.png";
 import { Mail, MapPin } from "lucide-react";
@@ -59,7 +60,22 @@ const page = () => {
           <ContactForm />
         </div>
 
-        <div className="mt-10 flex flex-col gap-10">
+        <MotionDiv
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            stiffness: 90,
+            duration: 1.7,
+            bounce: 0.3,
+            delay: 0.1,
+          }}
+          className="mt-10 flex flex-col gap-10"
+        >
           <div>
             <h1 className="text-[2rem] text-center md:text-[3rem] font-black">
               <span className="z-10 relative inline-block">
@@ -95,7 +111,7 @@ const page = () => {
               </>
             ))}
           </div>
-        </div>
+        </MotionDiv>
       </section>
     </Container>
   );

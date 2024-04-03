@@ -9,22 +9,32 @@ import wordpressimg from "@/public/images/wordpressimg.png";
 import Image from "next/image";
 import LineConnectSvg from "../svg/LineConnectSvg";
 import Container from "../Container";
+import { MotionDiv } from "../MotionDiv";
 
 const Services = () => {
   return (
     <Container>
       <section className="relative mt-0 mb-20 sm:my-20 w-full flex flex-col gap-10">
-        <div className="flex lg:hidden flex-col items-center">
-          <p className="font-bold text-primary text-[1.4rem] underline underline-offset-4">
-            Featured Services
-          </p>
-          <h1 className="font-black opacity-80 text-[2rem] text-center">
-            Services which we provide
-          </h1>
-        </div>
-
         <div className="w-full flex md:flex-row flex-col justify-center gap-7 items-center">
-          <div className="relative w-full md:w-[300px] h-[200px] flex items-center justify-center flex-col gap-3 rounded-lg">
+          <MotionDiv
+            initial={{
+              x: "-100px",
+              opacity: 0,
+            }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 90,
+              duration: 1.7,
+              bounce: 0.3,
+              delay: 0.1,
+            }}
+            className="relative w-full md:w-[300px] h-[200px] flex items-center justify-center flex-col gap-3 rounded-lg"
+          >
             <Image
               src={webimg}
               fill
@@ -35,18 +45,51 @@ const Services = () => {
             <h3 className="text-[1.3rem] font-black text-background">
               Web Development
             </h3>
-          </div>
+          </MotionDiv>
 
-          <div className="hidden lg:flex flex-col items-center">
+          <MotionDiv
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+            }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 90,
+              duration: 1.7,
+              bounce: 0.3,
+              delay: 0.5,
+            }}
+            className="hidden lg:flex flex-col items-center"
+          >
             <p className="font-bold text-primary text-[1.4rem] underline underline-offset-4">
               Featured Services
             </p>
             <h1 className="font-black opacity-80 text-[2rem] text-center">
               Services which we provide
             </h1>
-          </div>
+          </MotionDiv>
           <LineConnectSvg />
-          <div className="relative w-full md:w-[300px] h-[200px] flex items-center justify-center flex-col gap-3 rounded-lg">
+          <MotionDiv
+            initial={{
+              x: "100px",
+              opacity: 0,
+            }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 90,
+              duration: 1.7,
+              bounce: 0.3,
+              delay: 0.1,
+            }}
+            className="relative w-full md:w-[300px] h-[200px] flex items-center justify-center flex-col gap-3 rounded-lg"
+          >
             <Image
               src={appimg}
               fill
@@ -57,11 +100,29 @@ const Services = () => {
             <h3 className="text-[1.3rem] font-black text-background">
               App Development
             </h3>
-          </div>
+          </MotionDiv>
         </div>
 
         <div className="flex md:flex-row flex-col items-center justify-center gap-10">
-          <div className="relative w-full md:w-[300px] h-[200px] flex items-center justify-center flex-col gap-3 rounded-lg">
+          <MotionDiv
+            initial={{
+              y: "100px",
+              opacity: 0,
+            }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+            }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 90,
+              duration: 1.7,
+              bounce: 0.3,
+              delay: 0.1,
+            }}
+            className="relative w-full md:w-[300px] h-[200px] flex items-center justify-center flex-col gap-3 rounded-lg"
+          >
             <Image
               src={machineimg}
               fill
@@ -72,9 +133,27 @@ const Services = () => {
             <h3 className="text-[1.3rem] font-black text-background">
               Machine Learning
             </h3>
-          </div>
+          </MotionDiv>
 
-          <div className="relative w-full md:w-[300px] h-[200px] flex items-center justify-center flex-col gap-3 rounded-lg">
+          <MotionDiv
+            initial={{
+              y: "100px",
+              opacity: 0,
+            }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+            }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 90,
+              duration: 1.7,
+              bounce: 0.3,
+              delay: 0.1,
+            }}
+            className="relative w-full md:w-[300px] h-[200px] flex items-center justify-center flex-col gap-3 rounded-lg"
+          >
             <Image
               src={wordpressimg}
               fill
@@ -90,7 +169,7 @@ const Services = () => {
             <h3 className="text-[1.3rem] font-black text-background text-center">
               WordPress Development
             </h3>
-          </div>
+          </MotionDiv>
         </div>
       </section>
     </Container>

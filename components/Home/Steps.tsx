@@ -1,10 +1,26 @@
 import Container from "../Container";
 import { StepsList } from "@/lib/lists";
+import { MotionDiv } from "../MotionDiv";
 
 const Steps = () => {
   return (
     <Container>
-      <section className="mt-0 mb-10 sm:my-20 flex flex-col gap-10">
+      <MotionDiv
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+        transition={{
+          type: "spring",
+          stiffness: 90,
+          duration: 1.7,
+          bounce: 0.3,
+          delay: 0.1,
+        }}
+        className="mt-0 mb-10 sm:my-20 flex flex-col gap-10"
+      >
         <div className="flex flex-col gap-1">
           <h2 className="font-black llg:text-start text-center text-primary text-[1.2rem]">
             STEPS
@@ -40,7 +56,7 @@ const Steps = () => {
             </>
           ))}
         </div>
-      </section>
+      </MotionDiv>
     </Container>
   );
 };

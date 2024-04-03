@@ -1,12 +1,11 @@
-import Container from "@/components/Container";
 import Image from "next/image";
 import banner from "@/public/images/banner.jpg";
-import { TeamList } from "@/lib/lists";
 import Inquiry from "@/components/Home/Inquiry";
+import TeamLists from "@/components/TeamLists";
+import { MotionDiv } from "@/components/MotionDiv";
 
 const page = () => {
   return (
-    // <Container>
     <section className="flex flex-col gap-20 mt-20">
       <div className="flex flex-col items-center gap-3">
         <p className="font-bold text-primary text-[1.4rem]">WHO WE ARE</p>
@@ -27,7 +26,22 @@ const page = () => {
         />
       </div>
 
-      <div className="flex items-center justify-center">
+      <MotionDiv
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+        transition={{
+          type: "spring",
+          stiffness: 90,
+          duration: 1.7,
+          bounce: 0.3,
+          delay: 0.1,
+        }}
+        className="flex items-center justify-center"
+      >
         <div className="flex flex-col gap-2 items-center">
           <p className="font-bold text-primary text-[1.4rem]">
             COMPANY OVERVIEW
@@ -76,7 +90,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      </MotionDiv>
 
       <div className="flex items-center justify-center flex-col gap-7">
         <div className="flex items-center flex-col gap-3">
@@ -94,32 +108,12 @@ const page = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-x-10 gap-y-40 mt-5">
-          {TeamList.map((team, i) => (
-            <div key={i} className="relative w-[250px]">
-              <div className="relative w-[full] h-[200px]">
-                <Image
-                  src={team.img}
-                  fill
-                  alt=""
-                  className="object-cover object-top shadow rounded-3xl"
-                />
-              </div>
-              <div className="absolute py-5 px-3 w-full -bottom-20 h-[100px] flex items-center flex-col bg-zinc-100 shadow-lg rounded-2xl border border-input">
-                <h3 className="font-semibold opacity-80">{team.name}</h3>
-                <p className="text-center opacity-80 text-[0.9rem]">
-                  {team.role}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <TeamLists />
       </div>
       <div className="mt-20 bg-secondary py-10">
         <Inquiry />
       </div>
     </section>
-    // </Container
   );
 };
 

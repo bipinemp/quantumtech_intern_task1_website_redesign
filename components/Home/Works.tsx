@@ -1,4 +1,5 @@
 import Container from "../Container";
+import { MotionDiv } from "../MotionDiv";
 import { WorksSlide } from "./WorksSlide";
 
 const Works = () => {
@@ -9,9 +10,24 @@ const Works = () => {
           Our Works
           <span className="absolute bottom-0 md:bottom-4 -z-10 left-0 w-full h-[15px] bg-primary"></span>
         </h1>
-        <div className="w-full relative">
+        <MotionDiv
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            stiffness: 90,
+            duration: 1.7,
+            bounce: 0.3,
+            delay: 0.5,
+          }}
+          className="w-full relative"
+        >
           <WorksSlide />
-        </div>
+        </MotionDiv>
       </section>
     </Container>
   );
