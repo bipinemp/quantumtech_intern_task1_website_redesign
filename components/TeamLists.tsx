@@ -20,7 +20,7 @@ const fadeInAnimateVariants = {
 
 const TeamLists = () => {
   return (
-    <div className="grid grid-cols-4 gap-x-10 gap-y-40 mt-5">
+    <div className="grid grid-cols-1 ssm:grid-cols-2 mmd:grid-cols-3 xxl:grid-cols-4 gap-x-10 gap-y-40 mt-5">
       {TeamList.map((team, i) => (
         <MotionDiv
           variants={fadeInAnimateVariants}
@@ -29,7 +29,7 @@ const TeamLists = () => {
           viewport={{ once: true }}
           custom={i}
           key={i}
-          className="relative w-[250px]"
+          className="relative w-[280px] vsm:w-[300px] ssm:w-[250px]"
         >
           <div className="relative w-[full] h-[200px]">
             <Image

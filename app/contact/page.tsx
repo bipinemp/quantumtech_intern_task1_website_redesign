@@ -13,20 +13,22 @@ const page = () => {
     <Container>
       <section className="flex flex-col gap-20 my-20">
         <div className="flex flex-col items-center gap-3">
-          <p className="font-bold text-primary text-[1.4rem]">CONTACT US</p>
+          <p className="font-bold text-primary text-[1.2rem] sm:text-[1.4rem]">
+            CONTACT US
+          </p>
           <h1 className="text-[2rem] text-center md:text-[3rem] font-black">
             <span className="z-10 relative inline-block">
               Send Us Your Message
-              <span className="absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
+              <span className="hidden lg:block lg:absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
             </span>
           </h1>
         </div>
 
-        <div className="grid grid-cols-2 gap-x-10">
+        <div className="grid grid-cols-1 gap-y-5 md:grid-cols-2 gap-x-10">
           <div className="p-4 bg-zinc-50 flex flex-col gap-7 justify-center items-center rounded-lg border border-primary">
             <div className="flex flex-col gap-10 col-span-1 xl:col-span-2">
               <div className="flex flex-col gap-4">
-                <h2 className="text-primary font-black underline underline-offset-4">
+                <h2 className="text-[1.1rem] sm:text-[1.5rem] text-primary font-black underline underline-offset-4">
                   CONTACT INFORMATION
                 </h2>
                 <div className="flex items-center gap-3">
@@ -74,7 +76,7 @@ const page = () => {
             bounce: 0.3,
             delay: 0.1,
           }}
-          className="mt-10 flex flex-col gap-10"
+          className="mt-10 flex flex-col gap-10 mx-auto"
         >
           <div>
             <h1 className="text-[2rem] text-center md:text-[3rem] font-black">
@@ -96,12 +98,12 @@ const page = () => {
 
                 <div
                   key={i}
-                  className="relative shadow-lg py-6 px-8 flex w-fit h-[220px] flex-col items-center justify-center gap-3 p-3 bg-secondary text-foreground"
+                  className="relative shadow-lg py-6 px-8 flex max-w-[300px] w-fit h-[250px] sm:h-[220px] flex-col items-center justify-center gap-3 p-3 bg-secondary text-foreground"
                 >
                   <h2 className="text-[1.2rem] llg:text-[1.5rem] py-2 px-3 rounded-full shadow bg-blue-500 text-background font-black">
                     0{i + 1}
                   </h2>
-                  <h3 className="text-[0.7rem] opacity-80 llg:text-[1rem] text-center font-bold tracking-wider">
+                  <h3 className="text-[1rem] opacity-80 llg:text-[1rem] text-center font-bold tracking-wider">
                     {step.name}
                   </h3>
                   <p className="text-[0.9rem] opacity-80 text-center">

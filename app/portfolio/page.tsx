@@ -8,17 +8,19 @@ import Inquiry from "@/components/Home/Inquiry";
 const page = () => {
   return (
     <section className="flex flex-col gap-20 mt-20">
-      <div className="flex flex-col items-center gap-3">
-        <p className="font-bold text-primary text-[1.4rem]">COLLECTIONS</p>
+      <div className="flex flex-col items-center gap-0 sm:gap-3">
+        <p className="font-bold text-primary text-[1.2rem] sm:text-[1.4rem]">
+          COLLECTIONS
+        </p>
         <h1 className="text-[2rem] text-center md:text-[3rem] font-black">
           <span className="z-10 relative inline-block">
             Our Portfolio
-            <span className="absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
+            <span className="hidden lg:block lg:absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
           </span>
         </h1>
       </div>
 
-      <div className="grid grid-cols-2 gap-x-10  max-w-[1920px] mx-auto px-4 md:px-10 xl:px-28 2xl:px-52">
+      <div className="grid grid-cols-1 gap-y-5 mmd:grid-cols-2 gap-x-10 max-w-[1920px] mx-auto px-4 md:px-10 xl:px-28 2xl:px-52">
         <div className="w-full col-span-1 flex flex-col gap-4">
           <div className="relative h-[300px]">
             <Image
@@ -58,7 +60,7 @@ const page = () => {
               chance to fulfill my potential here. I appreciate you supporting
               me at the meeting.
             </p>
-            <p className="flex items-center gap-3 underline underline-offset-4">
+            <p className="flex sm:flex-row flex-col gap-y-2 items-center gap-3 underline underline-offset-4">
               <Speech className="size-7" strokeWidth={3} />
               <span className="font-bold opacity-80">Rahul Bhagat:</span>{" "}
               <span className="opacity-80">Owner at Realdaam</span>

@@ -12,12 +12,12 @@ const page = () => {
         <h1 className="text-[2rem] text-center md:text-[3rem] font-black">
           <span className="z-10 relative inline-block">
             Quantum Compilers Technologies
-            <span className="absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
+            <span className="hidden lg:block lg:absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
           </span>
         </h1>
       </div>
 
-      <div className="relative w-full overflow-hidden h-[400px] aspect-video bg-primary shadow-lg">
+      <div className="relative w-full aspect-video h-[300px] 2xl:h-[700px] overflow-hidden bg-primary shadow-lg">
         <Image
           src={banner}
           fill
@@ -43,16 +43,16 @@ const page = () => {
         className="flex items-center justify-center"
       >
         <div className="flex flex-col gap-2 items-center">
-          <p className="font-bold text-primary text-[1.4rem]">
+          <p className="font-bold text-primary text-[1.2rem] md:text-[1.4rem]">
             COMPANY OVERVIEW
           </p>
-          <h1 className="text-[2rem] text-center md:text-[3rem] font-black">
+          <h1 className="text-[1.5rem] text-center md:text-[3rem] font-black">
             <span className="z-10 relative inline-block">
-              Screw It, Let's Do it !!
-              <span className="absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
+              Screw It, Let&apos;s Do it !!
+              <span className="absolute bottom-2 md:bottom-3 -z-10 left-0 w-full h-[5px] md:h-[15px] bg-primary"></span>
             </span>
           </h1>
-          <div className="flex flex-col gap-5 mt-10 md:mt-4">
+          <div className="flex flex-col gap-5 mt-10 md:mt-4 px-5">
             <div className="relative flex items-center rounded-lg shadow bg-secondary">
               <div className="relative ml-4 sm:ml-0 py-4 px-6 size-[100px] md:size-[80px]">
                 <Image
@@ -62,7 +62,7 @@ const page = () => {
                   className="p-3"
                 />
               </div>
-              <span className="ml-4 md:ml-0 w-[3px] h-[100px] bg-[#1FB2D1]"></span>
+              <span className="ml-4 md:ml-0 w-[3px] h-[110px] md:h-[100px] bg-[#1FB2D1]"></span>
               <div className="flex flex-col gap-1 py-4 px-6">
                 <h3 className="font-black">Our Mission</h3>
                 <p className="opacity-80 text-[0.8rem]">
@@ -79,7 +79,7 @@ const page = () => {
                   className="p-3"
                 />
               </div>
-              <span className="ml-4 md:ml-0 w-[3px] h-[100px] bg-[#1FB2D1]"></span>
+              <span className="ml-4 md:ml-0 w-[3px] h-[110px] md:h-[100px] bg-[#1FB2D1]"></span>
               <div className="flex flex-col gap-1 py-4 px-6">
                 <h3 className="font-black">Our Goal</h3>
                 <p className="opacity-80 text-[0.8rem]">
@@ -98,10 +98,10 @@ const page = () => {
           <h1 className="text-[2rem] text-center md:text-[3rem] font-black">
             <span className="z-10 relative inline-block">
               Young, Vibrant and Passionate
-              <span className="absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
+              <span className="hidden lg:block lg:absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
             </span>
           </h1>
-          <p className="text-[1rem] opacity-80 px-32 text-center">
+          <p className="text-[1rem] opacity-80 px-5 sm:px-32 text-center">
             We blend our skills for web development into a powerful, agile team.
             Our team of designers and project managers partner with you to build
             forward-thinking user experiences

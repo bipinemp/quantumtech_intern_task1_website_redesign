@@ -1,4 +1,3 @@
-import Container from "@/components/Container";
 import Inquiry from "@/components/Home/Inquiry";
 import ArrowSvg from "@/components/svg/ArrowSvg";
 import { ServicesList } from "@/lib/lists";
@@ -12,14 +11,17 @@ const page = () => {
         <h1 className="text-[2rem] text-center md:text-[3rem] font-black">
           <span className="z-10 relative inline-block">
             Quantum Compilers Technologies
-            <span className="absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
+            <span className="hidden lg:block lg:absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
           </span>
         </h1>
       </div>
 
-      <div className="flex flex-col gap-32 mb-20 max-w-[1920px] mx-auto px-4 md:px-10 xl:px-28 2xl:px-52">
+      <div className="hidden md:flex flex-col gap-32 mb-20 max-w-[1920px] mx-auto px-4 md:px-10 xl:px-28 2xl:px-52">
         {ServicesList.map((service, i) => (
-          <div key={i} className="grid grid-cols-2 items-center gap-5">
+          <div
+            key={i}
+            className="grid grid-cols-1 px-10 md:px-0 md:grid-cols-2 items-center gap-5"
+          >
             {i % 2 === 0 ? (
               <>
                 <div className="relative w-full h-[350px]">
@@ -69,6 +71,39 @@ const page = () => {
                 </div>
               </>
             )}
+          </div>
+        ))}
+      </div>
+      <div className="flex md:hidden flex-col gap-10 md:gap-32 md:mb-20 max-w-[1920px] mx-auto px-4 md:px-10 xl:px-28 2xl:px-52">
+        {ServicesList.map((service, i) => (
+          <div
+            key={i}
+            className="relative text-white h-[320px] vsm:h-[300px] grid grid-cols-1 px-10 md:px-0 md:grid-cols-2 items-center gap-5"
+          >
+            <>
+              <div className="z-10 relative flex flex-col">
+                <div className="rotate-[50] z-20 -top-28 absolute right-12">
+                  <ArrowSvg />
+                </div>
+                <h1 className="text-[1.8rem] md:text-[2.2rem] text-center md:text-end opacity-80 font-black">
+                  <span className="z-10 underline md:no-underline relative inline-block">
+                    {service.name}
+                    <span className="hidden lg:block lg:absolute bottom-3 -z-10 left-0 w-full h-[8px] md:h-[15px] bg-primary"></span>
+                  </span>
+                </h1>
+                <p className="opacity-80 text-[0.9rem] text-center md:text-end">
+                  {service.desc}
+                </p>
+              </div>
+              <div className="absolute inset-0 -z-0 brightness-[.3]">
+                <Image
+                  src={service.img}
+                  fill
+                  alt=""
+                  className="rounded-lg shadow-lg"
+                />
+              </div>
+            </>
           </div>
         ))}
       </div>
