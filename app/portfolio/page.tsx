@@ -52,7 +52,7 @@ const page = () => {
           <Image src={logo} width={200} height={200} alt="" />
           <div className="mt-10 flex flex-col gap-5">
             <p className="text-[0.9rem] opacity-80">
-              "I want to acknowledge everyone's extra effort. You did an
+              I want to acknowledge everyone&apos;s extra effort. You did an
               excellent job on that report. I want to thank you publicly for
               your hard work and dedication. Your attitude and work level suits
               us here, so keep up the good work! Thank you for sharing your
